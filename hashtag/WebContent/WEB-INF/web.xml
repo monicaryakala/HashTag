@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Searchhashtagservlet</servlet-name>
+    <servlet-class>controller.Searchhashtagservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Viewhashtagservlet</servlet-name>
+    <servlet-class>controller.Viewhashtagservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateServlet</servlet-name>
+    <servlet-class>controller.CreateServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Searchhashtagservlet</servlet-name>
+    <url-pattern>/SearchHashtag</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Viewhashtagservlet</servlet-name>
+    <url-pattern>/viewHashtag</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateServlet</servlet-name>
+    <url-pattern>/CreateServlet</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
